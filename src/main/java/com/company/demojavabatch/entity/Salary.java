@@ -3,6 +3,7 @@ package com.company.demojavabatch.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table
@@ -11,7 +12,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Salary {
+public class Salary{
     public Salary(Integer empId, Project project, Double salary){
         this.empId = empId;
         this.project = project;
