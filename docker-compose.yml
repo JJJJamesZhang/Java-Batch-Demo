@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+  employee-service:
+    image: h0z03lu/employee-service:latest
+    expose:
+      - '8002'
+      - '8083'
+    ports:
+      - "8002:8002"
+      - "8083:8083"
+
+  redis-service:
+    image: redis:rc-alpine3.11
+    expose:
+      - '6379'
+    ports:
+      - "6379:6379"

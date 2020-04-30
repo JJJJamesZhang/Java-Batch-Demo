@@ -11,9 +11,9 @@ import org.springframework.stereotype.Service;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
-@Service
+//@Service
 public class UserService {
-    @KafkaListener(topics = "user")
+//    @KafkaListener(topics = "user")
     public void receive(@Payload String message, @Headers MessageHeaders headers) throws JsonProcessingException {
         LoginResult loginResult = LoginResult.jsonStringToLoginResult(message);
         JedisPool jedisPool = CacheClient.getJedisPool();

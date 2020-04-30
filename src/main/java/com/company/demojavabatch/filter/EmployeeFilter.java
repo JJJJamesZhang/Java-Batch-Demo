@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@Component
-@WebFilter(urlPatterns = "/employee/*")
+/*@Component
+@WebFilter(urlPatterns = "/employee/*")*/
 public class EmployeeFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)

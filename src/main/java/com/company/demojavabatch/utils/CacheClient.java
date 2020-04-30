@@ -10,7 +10,7 @@ public class CacheClient {
         JedisPoolConfig config = new JedisPoolConfig();
         config.setMaxIdle(8);
         config.setMaxTotal(18);
-        JedisPool pool = new JedisPool(config, "127.0.0.1", 6379, 2000 );
+        JedisPool pool = new JedisPool(config, "redis-service", 6379, 2000 );
         return pool;
     }
 }
